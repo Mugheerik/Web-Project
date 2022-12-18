@@ -1,7 +1,11 @@
-.Link2{
+
+.btn1:hover{
+   color:  rgb(13, 202, 240);
+}
+.btn1{
     text-decoration: none;
     color: white;
-}
-.Link2:hover{
-   color:  rgb(13, 202, 240);
+    outline: none;
+    border: none;
+    background-color: inherit;
 }

@@ -1,13 +1,15 @@
-import { Link } from "react-router-dom";
+import { Link ,useNavigate} from "react-router-dom";
 import { Dropdown } from "bootstrap";
 import "./nav.css"
 const Navbar = () => {
+  const navigate=useNavigate();
+  
     
     return ( 
         <nav className="navbar navbar-expand-lg  navbar-dark bg-dark">
         <div className="container-fluid">
-          <span className="navbar-brand" >
-            <Link className="Link2 active" to='/home'>
+          <button  onClick={()=>navigate("")} className="navbar-brand btn1" >
+            {/* <Link className="Link2 active" to='/home'> */}
           Access
             <img
               alt=""
@@ -17,27 +19,26 @@ const Navbar = () => {
               classNameName="d-inline-block align-center"
               />
            ries
-              </Link>
-          </span>
+              {/* </Link> */}
+          </button>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+             
               <li className="nav-item">
-                <Link className="nav-link  Link2" aria-current="page" to="/Sale">Sale!!</Link>
-              </li>
-              <li className="nav-item">
-              <Link  className='nav-link  Link2'  to='/about' >About</Link>
+              <button className="btn1 pt-2" onClick={()=>navigate("/about")}>About</button>
               </li>
               <li className="nav-item dropdown">
-                <span className="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span className="nav-link dropdown-toggle " role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Products
                 </span>
                 <ul className="dropdown-menu">
-                  <li><Link className="dropdown-item" to="./jewel">Jewellery</Link></li>
-                  <li><Link className="dropdown-item" to="./glass">Glasses</Link></li>
-                  <li><Link className="dropdown-item" to="./watch">watches</Link></li>
+                  <li><button className="dropdown-item " onClick={()=>navigate("./products")} >All products</button></li>
+                  <li><button className="dropdown-item " onClick={()=>navigate("./jewel")} >Jewellery</button></li>
+                  <li><button className="dropdown-item " onClick={()=>navigate("./glass")} >Glasses</button></li>
+                  <li><button className="dropdown-item " onClick={()=>navigate("./watch")} >Watches</button></li>
                
                  
                 </ul>
@@ -46,10 +47,10 @@ const Navbar = () => {
               <Link  className='nav-link  Link2'  to='/contact' >Contact</Link>
               </li> */}
               <li className="nav-item">
-              <Link to='/Signin'  className='btn btn-outline-info rounded-pill Link2'>Sign in</Link>
+              <Link to='/getstart'  className='btn btn-outline-info rounded-pill '>Get Started</Link>
               </li>
             <li  className="nav-item">
-               <Link to='/Signup'  className='btn btn-outline-info  rounded-pill ms-2 Link2'>Sign up</Link>
+               
              </li>
         
             </ul>
@@ -59,6 +60,7 @@ const Navbar = () => {
             </form>
           </div>
         </div>
+        
       </nav>
      );
 }

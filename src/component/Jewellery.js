@@ -1,26 +1,33 @@
 import { Card } from "react-bootstrap";
 import { Grid } from "semantic-ui-react";
-import CategoryJewel from "./categories jewel";
+
 import Viewsring from "./Viewjewels";
 
 import Newproducts from "./newProducts";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Viewwomen from "./jewelwomen";
+import Marquee from "./marquee";
+
+
 const Jewellery = () => {
     return ( 
         <div className="container">
-            <Grid padded="10vw">
-                <Grid.Row  >
-                    
-                    <Grid.Column width={12}>
+            
+                <div className="g-col-12">
+
+                
+                <div className="card mt-2 ms-2">
+              <Marquee name="JEWELLERY"/>
+                </div>
+                   
+                        
                     
                         <Viewsring/>
                        
                             
                          
-                    </Grid.Column>
-                </Grid.Row>
-            </Grid>
+                    
+                </div>
+           
        
         </div>
      );

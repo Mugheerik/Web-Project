@@ -1,7 +1,10 @@
 .carimg{
-    height: 80vh;
-    width: 100vw;
-    margin-top: 5vh;
+    display: block;
+   margin-left: auto;
+   margin-right: auto;
+   height: 50vh;
+   width: max-content;
+   transition: ease-in-out;
 }
 h5{
     font-family: sans-serif;

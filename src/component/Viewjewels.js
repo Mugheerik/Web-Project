@@ -21,16 +21,16 @@ const [state,setState]=useState(menRing);
       {
               state.map((item)=>{
                   return(
-                      <div className="col-3 col-md-4 col-12">
+                      <div className="col-4 col-md-4 col-lg-3">
 
-                        <div className="card mt-2 cardd">
+                        <div className="card mt-2 ">
                         
                                 <img className="card-img-top" src={item.image} alt=''/>
                             
                             <div className="card-body">
-                                 <h5 className="card-title"> {item.id}</h5>
-                                 <p>Quantity:{item.quantity}</p>
-                                 <p>Price:{item.price}</p>
+                                 <b >{item.id}</b><br/>
+                                 <b>Quantity:</b>{item.quantity}<br/>
+                                 <b>Price:</b>{item.price}<br/>
                                  <button className="btn btn-outline-info">Purchase</button>
                             </div>
 

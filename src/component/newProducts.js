@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Card, Row,Button } from "react-bootstrap";
-import "./products.css"
+
 
 const Newproducts = () => {
 
@@ -16,8 +16,8 @@ const handleclick =()=>{
   const newData=  state.filter((jewell)=>jewell.quantity=jewell.quantity-1)
   setState(newData);
 }
-    const handlechange=(jewel)=>{
-    const newData = state.filter((jewell)=>jewell.id!==jewel.id)
+    const handlechange=(id)=>{
+    const newData = state.filter((jewell)=>jewell.id!==id)
     setState(newData);
    
      }

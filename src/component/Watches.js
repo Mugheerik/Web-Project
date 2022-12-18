@@ -1,26 +1,29 @@
 import { Grid } from "semantic-ui-react";
-import Viewglass from "./ViewGlass";
+import Marquee from "./marquee";
+
+import Viewwatch from "./Viewwatch";
 const Watches = () => {
     return ( 
         <div className="container">
-            <Grid padded="10vw">
+            
+        <div className="g-col-12">
 
-                <div className="card mt-2 ms-2">
-                <h1>Glasses</h1>
-                </div>
-                <Grid.Row  >
-                    
-                    <Grid.Column width={12}>
-                    
-                        <Viewglass/>
-                       
-                            
-                         
-                    </Grid.Column>
-                </Grid.Row>
-            </Grid>
-       
+        
+        <div className="card mt-2 ms-2">
+       <Marquee name="WATCHES"/>
         </div>
+           
+                
+            
+                <Viewwatch/>
+               
+                    
+                 
+            
+        </div>
+   
+
+</div>
      );
 }
  

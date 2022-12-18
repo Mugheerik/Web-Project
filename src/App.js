@@ -10,25 +10,36 @@ import Home from './comp/home';
 import Navbar from './comp/nav';
 import Sale from './comp/sale';
 import About from './comp/about';
+import { useRef } from 'react';
+import Getstarted from './component/getstarted';
+import Allproducts from './component/allprod';
+import SignInForm from './component/newsignin';
+import SignUpForm from './component/newsignup';
+import "./component/Signin.css";
 
 
 function App() {
 
   
   return (
-    <div className="App" >
-      <style>{"body{background-color:dark}"}</style>
+    <div className="App"  >
+      
+
       <header>
         <BrowserRouter>
       <Navbar/>
+     
+      
 <Routes>
 <Route path='/jewel' element = {<Jewellery/> }/>
+<Route path='/products' element = {<Allproducts/> }/>
 <Route path='/watch' element = {<Watches/> }/>
 <Route path='/glass' element = {<Glasses/> }/>
-<Route path='/Signup' element={<Signup/>}/>
-<Route path='/Signin' element={<Signin/>}/>
-<Route path='/home' element={<Home/>}/>
-<Route path='/sale' element={<Sale/>}/>
+<Route path='/getstart' element={<Getstarted/>}/>
+<Route exact path="/" element={<Home/>} />
+
+<Route path="/sign-in" element={<SignInForm/>}/>
+<Route path='/sign-up' element={<SignUpForm/>}/>
 <Route path='/about' element={<About/>}/>
 </Routes>
 

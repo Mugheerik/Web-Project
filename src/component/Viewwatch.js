@@ -11,8 +11,8 @@ const menRing=[
     {id:5,quantity:10,image:"https://th.bing.com/th/id/R.486aabada630a89a51de99aa8b01dfcd?rik=akYDA9vN3P0Pqg&pid=ImgRaw&r=0",price:"10$"},
     {id:6,quantity:10,image:"https://th.bing.com/th/id/R.486aabada630a89a51de99aa8b01dfcd?rik=akYDA9vN3P0Pqg&pid=ImgRaw&r=0",price:"10$"},
    
-]
-const Viewglass = () => {
+];
+const Viewwatch = () => {
 const [state,setState]=useState(menRing);
     return ( 
        <div className="container " >
@@ -21,20 +21,22 @@ const [state,setState]=useState(menRing);
       {
               state.map((item)=>{
                   return(
-                      <div className="col-3 col-md-4 col-12">
+                      
 
-                        <div className="card mt-2 cardd">
-                        
-                                <img className="card-img-top" src={item.image} alt=''/>
-                            
-                            <div className="card-body">
-                                 <h5 className="card-title"> {item.id}</h5>
-                                 <p>Quantity:{item.quantity}</p>
-                                 <p>Price:{item.price}</p>
-                                 <button className="btn btn-outline-info">Purchase</button>
-                            </div>
+<div className="col-4 col-md-4 col-lg-3">
 
-                      </div>
+<div className="card mt-2 ">
+
+        <img className="card-img-top" src={item.image} alt=''/>
+    
+    <div className="card-body">
+         <b >{item.id}</b><br/>
+         <b>Quantity:</b>{item.quantity}<br/>
+         <b>Price:</b>{item.price}<br/>
+         <button className="btn btn-outline-info">Purchase</button>
+    </div>
+
+</div>
                       
                       
                      
@@ -42,15 +44,11 @@ const [state,setState]=useState(menRing);
                       
                       
       </div>
+                    
                       )
                     })
-                    
                 }
-
-
-          
-                
-                </div>
+ </div>
                 
                </div> 
                 
@@ -58,4 +56,4 @@ const [state,setState]=useState(menRing);
      )
 }
  
-export default Viewglass;
+export default Viewwatch;

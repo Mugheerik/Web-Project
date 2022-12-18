@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button, Card,  Row } from "react-bootstrap";
 
 import { Form } from "react-bootstrap";
-import './products.css'
+
 
 const Products = () => {
     // internal css

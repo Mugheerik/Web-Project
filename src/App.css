@@ -2,7 +2,8 @@
   font-family:  Helvetica ;
   color: rgb(0, 0, 0);
   text-align: center;
-  background-image: linear-gradient(to top ,rgb(255, 5, 5),blue);
+  background-color: black;
+ 
  
 }
 .cardd:hover{
