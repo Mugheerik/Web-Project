@@ -1,0 +1,14 @@
+.display{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    justify-self: center;
+    padding: 10vh;
+    border: 2px solid rgb(13, 202, 240);
+    
+}
+
+.dd{
+    margin-top: 5vh;
+}

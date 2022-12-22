@@ -4,19 +4,18 @@ import Watches from './component/Watches';
 import Glasses from './component/Glasses';
 import './App.css';
 import {Routes,Route,BrowserRouter} from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Home from './comp/home/home.js';
+
+import Home from './comp/Home/home.js';
 import Navbar from './comp/nav';
 
 import About from './comp/about';
-// import Cart from "./comp/Cart/Cart";
-// import Shipping from "./comp/Cart/Shipping";
+
 import Getstarted from './component/getstarted';
 import Allproducts from './component/allprod';
 import SignInForm from './component/newsignin';
 import SignUpForm from './component/newsignup';
 import "./component/Signin.css";
-import Admininterface from './comp/admin/admin';
+import Admininterface from './comp/admin/admin.js';
 // import Footer from './comp/footer/footer';
 
 
