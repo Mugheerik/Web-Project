@@ -9,3 +9,16 @@
     border: none;
     background-color: inherit;
 }
+.navv{
+    padding-inline-start: 2vw;
+
+    background-color: inherit;
+    color: white;
+    display: flex;
+    justify-self:flex-start;
+    flex-direction: row;
+    justify-items: center;
+
+    
+    
+}

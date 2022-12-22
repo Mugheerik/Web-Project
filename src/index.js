@@ -5,11 +5,17 @@ import App from './App';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'semantic-ui-css/semantic.min.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import { BrowserRouter } from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  <BrowserRouter>
   <React.StrictMode>
     <App />
   </React.StrictMode>
+  </BrowserRouter>
+
 );
 
 

@@ -2,8 +2,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import {  Card, Form, Row } from "react-bootstrap";
-import Home from "./home";
-import Sale from "./sale";
+
 
 // import './Signup.css'
 

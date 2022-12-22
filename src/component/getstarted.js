@@ -1,8 +1,7 @@
 
 import React from "react";
-import {  Router, Route, NavLink } from "react-router-dom";
-import SignUpForm from "./newsignup";
-import SignInForm from "./newsignin";
+import {  NavLink } from "react-router-dom";
+
 
 
 const Getstarted = () => {

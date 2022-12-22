@@ -1,16 +1,14 @@
-import { Card } from "react-bootstrap";
-import { Grid } from "semantic-ui-react";
+
 
 import Viewsring from "./Viewjewels";
 
-import Newproducts from "./newProducts";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 import Marquee from "./marquee";
 
 
 const Jewellery = () => {
     return ( 
-        <div className="container">
+        <div className="container mt-4">
             
                 <div className="g-col-12">
 
@@ -19,9 +17,11 @@ const Jewellery = () => {
               <Marquee name="JEWELLERY"/>
                 </div>
                    
-                        
+                        <div className="g-col-12 mt-4">
+
                     
                         <Viewsring/>
+                        </div>
                        
                             
                          

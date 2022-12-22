@@ -1,10 +1,10 @@
-import { Grid } from "semantic-ui-react";
+
 import Marquee from "./marquee";
 
 import Viewwatch from "./Viewwatch";
 const Watches = () => {
     return ( 
-        <div className="container">
+        <div className="container mt-4">
             
         <div className="g-col-12">
 
@@ -14,8 +14,10 @@ const Watches = () => {
         </div>
            
                 
-            
+            <div className="g-col-12 mt-4">
+
                 <Viewwatch/>
+            </div>
                
                     
                  

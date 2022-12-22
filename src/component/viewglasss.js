@@ -32,7 +32,7 @@ const Viewglass = () => {
 
 <div className="col-4 col-md-4 col-lg-3">
 
-<div className="card mt-2 ">
+<div className="card mt-4 ">
 
         <img className="card-img-top" src={item.image} alt=''/>
     

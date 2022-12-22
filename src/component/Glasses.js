@@ -1,23 +1,10 @@
-import Products from "./products";
-
-
-
-
-import { Card } from "react-bootstrap";
-import { Grid } from "semantic-ui-react";
 import Viewglass from "./viewglasss";
 import Marquee from "./marquee";
 
 
-
-
-
-
-
-
 const Glasses = () => {
     return ( 
-        <div className="container">
+        <div className="container mt-5">
             
                 <div className="g-col-12">
 
@@ -28,9 +15,10 @@ const Glasses = () => {
                 
                 </div>
                    
-                        
+                       <div className="g-col-12 mt-4">
                     
                         <Viewglass/>
+                        </div> 
                        
                             
                          

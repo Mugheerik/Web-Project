@@ -1,21 +1,26 @@
-import Navigation from './component/Navigation';
+
 import Jewellery from './component/Jewellery';
 import Watches from './component/Watches';
 import Glasses from './component/Glasses';
 import './App.css';
 import {Routes,Route,BrowserRouter} from 'react-router-dom'
-import Signup from './comp/signup';
-import Signin from './component/signin';
-import Home from './comp/home';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Home from './comp/home/home.js';
 import Navbar from './comp/nav';
-import Sale from './comp/sale';
+
 import About from './comp/about';
-import { useRef } from 'react';
+// import Cart from "./comp/Cart/Cart";
+// import Shipping from "./comp/Cart/Shipping";
 import Getstarted from './component/getstarted';
 import Allproducts from './component/allprod';
 import SignInForm from './component/newsignin';
 import SignUpForm from './component/newsignup';
 import "./component/Signin.css";
+import Admininterface from './comp/admin/admin';
+// import Footer from './comp/footer/footer';
+
+
+
 
 
 function App() {
@@ -24,12 +29,17 @@ function App() {
   return (
     <div className="App"  >
       
+<div className='container'>
 
-      <header>
-        <BrowserRouter>
-      <Navbar/>
-     
-      
+<div className='row'>
+<div className='col-12'>
+
+  <Navbar/>
+</div>
+</div>
+<div className='row'>
+  <div className='col-12'>
+
 <Routes>
 <Route path='/jewel' element = {<Jewellery/> }/>
 <Route path='/products' element = {<Allproducts/> }/>
@@ -37,14 +47,28 @@ function App() {
 <Route path='/glass' element = {<Glasses/> }/>
 <Route path='/getstart' element={<Getstarted/>}/>
 <Route exact path="/" element={<Home/>} />
-
 <Route path="/sign-in" element={<SignInForm/>}/>
 <Route path='/sign-up' element={<SignUpForm/>}/>
 <Route path='/about' element={<About/>}/>
+<Route path='/admininter' element={<Admininterface/>}/>
 </Routes>
+  </div>
+</div>
 
-      </BrowserRouter>
-      </header>
+
+<div className='row '>
+  <div className='col-6'>
+
+{/* <Footer/> */}
+  </div>
+</div>
+</div>
+     
+
+
+      
+        
+      
     </div>
   );
 }
